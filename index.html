@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="print.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="script.js"></script>
+  <title>SoMart</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-text">
+      <h1>SoMart</h1>
+      <h2>Your local and friendly smartphone webshop!</h2>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li> <a class="active " href="#">Home</a></li>
+      <li> <a href="#top-products">Top Products</a></li>
+      <li> <a href="#stores">Stores</a></li>
+      <li> <a href="#opening-times">Opening Times</a></li>
+      <li> <a href="#about-us">About us</a></li>
+      <li class="right"> <a href="/docs.html">Documentation</a></li>
+      <li class="right"> <a href=#compat-report>Compatability Report</a></li>
+    </ul>
+  </nav>
+
+  <div class="top-table">
+    <table id="top-products">
+      <caption><strong>Database products</strong></caption>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Brand Name</th>
+          <th>Model</th>
+          <th>Screen Size</th>
+          <th>OS</th>
+          <th>ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <form>
+            <td> <input type="text" name="image" placeholder="URL img" required></td>
+            <td> <input type="text" name="brand" placeholder=" Brand" required></td>
+            <td> <input type="text" name="model" placeholder="Model" required></td>
+            <td> <input type="text" name="screensize" placeholder="Screensize" required></td>
+            <td> <input type="text" name="os" placeholder="OS" required></td>
+            <td> <input type="text" name="id" placeholder="ID"></td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="submit-div">
+      <button type="submit" id="submit-db">Add to DB</button>
+      </form>
+      <button type="button" id="update-db">Update Entry</button>
+      <button type="button" id="retrieve-db">Retrieve phone</button>
+      <button type="button" id="delete-db">Delete Entry</button>
+      <button type="button" id="reset-db">Reset db</button>
+    </div>
+  </div>
+  <div class="bottom-table">
+    <table id="bot-table">
+      <caption><strong>Best of Chinese Products in 2019</strong></caption>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Brand Name</th>
+          <th>Model</th>
+          <th>Screen Size</th>
+          <th>OS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img class=" product-img" alt="Xiaomi phone image"
+              src="https://image.coolblue.nl/max/500x500/products/1207173">
+          </td>
+          <td><strong>Xiaomi</strong></td>
+          <td>
+            Xiaomi Mi 9
+          </td>
+          <td>6.39", 2340 x 1080 </td>
+          <td>Snap-dragon</td>
+        </tr>
+        <tr>
+          <td><img class="product-img" alt="Oneplus phone image"
+              src="https://gloimg.gbtcdn.com/soa/gb/pdm-product-pic/Electronic/2019/10/14/goods_img_big-v2/20191014101032_11101.jpg">
+          </td>
+          <td><strong>Oneplus</strong></td>
+          <td>
+            Oneplus 7 Pro
+          </td>
+          <td>6.67 ", 1440 x 3120</td>
+          <td>Android 9.0 (Pie)</td>
+        </tr>
+        <tr>
+          <td><img class="product-img" alt="Huawei phone image"
+              src="https://image.coolblue.nl/max/500x500/products/1216231">
+          </td>
+          <td><strong>Huawei </strong></td>
+          <td>
+            P30 Pro
+          <td>6.47 ", 1080 x 2340</td>
+          <td>Kirin 980</td>
+        </tr>
+        <tr>
+          <td><img class="product-img" alt="Oppo phone image"
+              src="https://images-na.ssl-images-amazon.com/images/I/811Hx9Yz4AL._AC_SL1500_.jpg"></td>
+          <td><strong>Oppo Reno</strong></td>
+          <td>
+            Reno 10x
+          </td>
+          <td>6.6",1080 x 2340</td>
+          <td>Snap-dragon Octa Core</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <section id="stores">
+    <div class="section-title">
+      <h2> Our store locations are as follows:</h2>
+    </div>
+    <div class="section-div" id="st">
+      <dl>
+        <dt>Netherlands</dt>
+        <dd><a href="#">Amsterdam</a> </dd>
+        <dd><a href="#">Leiden</a> </dd>
+        <dd><a href="#">Utrecht</a> </dd>
+        <dt>Canada</dt>
+        <dd><a href="#">Toronto</a></dd>
+        <dd><a href="#">Vancouver</a></dd>
+        <dt>Turkey</dt>
+        <dd><a href="#">Istanbul</a> </dd>
+      </dl>
+    </div>
+  </section>
+
+  <section id="opening-times">
+    <div class="section-title">
+      <h2> Opening Times:</h2>
+    </div>
+    <div class="section-div">
+      <p>Our stores in the Netherlands are open from 9 AM to 6 PM.</p>
+      <p>Please contact stores outside of the Netherlands for their respective opening times.</p>
+    </div>
+  </section>
+
+  <section id="about-us">
+    <div class="section-title">
+      <h2>About Us</h2>
+    </div>
+    <div class="section-div">
+      <p> We are a team of 42. Our headquarters are located in Amsterdam</p>
+      <h3>Directions to our headquarters:</h3>
+      <ol class="liststyle">
+        <li id="specialone">Take highway A10</li>
+        <li id="specialtwo">Get off at exit Buitenveldert</li>
+        <li>Turn onto Amstelveenseweg following directions to VUMC</li>
+        <li>Turn onto De Boelelaan towards VUMC</li>
+        <li>Drive until you see VU</li>
+      </ol>
+      <figure>
+        <img src="https://im.gifbt.com/map/venue/9303.png" alt="Location to headquarters">
+        <figcaption>Location of our headquarters</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="compat-report">
+    <div class="section-title">
+      <h2>Compatability Report</h2>
+    </div>
+    <div class="section-div">
+      <p>Tested in:</p>
+      <ul>
+        <li>Firefox</li>
+        <li>Google Chrome</li>
+      </ul>
+      <p>Mobile testing done using chrome's dev tools. Multiple screens tested.</p>
+      <p>Print testing done using print preview.</p>
+    </div>
+  </section>
+  <footer>
+    <p>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+          alt="Valid CSS!" />
+      </a>
+    </p>
+  </footer>
+</body>
+
+</html>
